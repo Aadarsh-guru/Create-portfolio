@@ -226,7 +226,7 @@ const UserSitePage = async ({ params }: { params: { identifier: string } }) => {
                 <section id="projects" className="section w-full" >
                     <div className="w-full flex flex-col p-4 gap-4" >
                         <h4 className="text-lg lg:text-xl font-semibold text-sky-500" >Projects -</h4>
-                        <div className="w-full grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-4 gap-2 lg:gap-4 border shadow-sm p-4 rounded-lg">
+                        <div className="w-full grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-2 lg:gap-4 border shadow-sm p-4 rounded-lg">
                             {projects?.map((project: any) => (
                                 <ProjectCard username={user?.username!} key={project.id} project={project} />
                             ))}
